@@ -19,15 +19,14 @@ const s3 = new S3Client({
 });
 const app = express();
 app.use(async (req, res) => {
-  const host = req.hostname;
-  console.log(host);
-  const id = host.split(".")[0];
+  console.log(req.path);
+  const parts=req.path.split('/').filter(Boolean);
+  const id = parts[0];
   console.log(id);
-  let filePath = req.path;
-  if (filePath == "/") {
-    filePath = "/index.html";
-  }
-  const key = `dist/${id}${filePath}`;
+  let filePath = parts.slice(1).join('/') || 'index.html';
+  console.log(filePath);
+  const key = `dist/${id}/${filePath}`;
+  console.log(key);
   const contents = await s3.send(
     new GetObjectCommand({
       Bucket: "uploader1",

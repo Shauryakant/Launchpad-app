@@ -23,6 +23,7 @@ app.use(cors());
 const git = simpleGit();
 app.post("/deploy", async (req, res) => {
   const repoUrl = req.body.repoUrl;
+  console.log(repoUrl);
   const id = generate();
   await redis.hset("status", { [id]: "uploading" });
   await git.clone(repoUrl, path.join(__dirname, `output/${id}`));

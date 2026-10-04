@@ -4,6 +4,7 @@ Launchpad is a modern, Vercel-like deployment platform designed to seamlessly cl
 
 [![Launchpad: Instant Global Deployments](https://repoclip.io/api/badge/8e1bdf84-10a1-4846-b8f7-ef682e6d00a2)](https://repoclip.io/v/8e1bdf84-10a1-4846-b8f7-ef682e6d00a2)
 
+[![Architecture diagram of shauryakant/launchpad-app](https://gitdiagram.com/shauryakant/launchpad-app/diagram.png)](https://gitdiagram.com/shauryakant/launchpad-app?utm_source=readme&utm_medium=picture)
 ## 🏗 Architecture & Services
 
 The platform is split into four distinct microservices, utilizing a message queue and object storage to ensure high performance and scalability.

@@ -2,6 +2,8 @@
 
 Launchpad is a modern, Vercel-like deployment platform designed to seamlessly clone, build, and deploy GitHub repositories in a highly scalable and decoupled architecture.
 
+[![Launchpad: Instant Global Deployments](https://repoclip.io/api/badge/8e1bdf84-10a1-4846-b8f7-ef682e6d00a2)](https://repoclip.io/v/8e1bdf84-10a1-4846-b8f7-ef682e6d00a2)
+
 ## 🏗 Architecture & Services
 
 The platform is split into four distinct microservices, utilizing a message queue and object storage to ensure high performance and scalability.
